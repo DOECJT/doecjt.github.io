@@ -5,8 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>doecjt</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body, h3, p {
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      text-decoration: none;
+      color: #222;
+    }
+    #app {
+      padding: 15vw 10vw;
+      font-family: 'Nunito', sans-serif;
+      color: #222;
+      font-size: 22px;
+    }
+    .title {
+      font-size: 36px;
+      line-height: 80px;
+    }
+    .content {
+      padding: 10px 0;
+    }
+    p {
+      line-height: 120%;
+    }
+    .link {
+      position: relative;
+    }
+    .link::after {
+      content: '';
+      display: inline;
+      width: 100%;
+      height: 40%;
+      background: #8ec5fc;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      transition: 300ms;
+    }
+    .link:hover::after {
+      height: 100%;
+    }
+  </style>
 </head>
 <body>
-  <a href="https://doecjt.github.io/blog">blog</a>
+  <div id="app">
+    <h3 class="title">Hi, I'm doecjt.</h3>
+    <div class="content">
+      <p>I like coding.</p>
+      <p>I learn and practice coding, writing down what I learn in my <a href="https://doecjt.github.io/blog" class="link">blog</a>.</p>
+    </div>
+    <div class="content">
+      <p>I like films.</p>
+      <p>Great works should be remembered. I record those films which can not be forgotten in my <a href="http://doecjt.github.io/film" class="link">album</a>.</p>
+    </div>
+    <div class="content">
+      <p>I like music.</p>
+      <p>I think beautiful melody should be shared. So I collect some music in my <a href="https://doecjt.github.io/music" class="link">player</a>.</p>
+    </div>
+    <div class="content">
+      <p>And I enjoy my life.</p>
+      <p>I write down what I learn from my life in my <a href="https://doecjt.github.io/story" class="link">notebook</a>.</p>
+    </div>
+  </div>
+
 </body>
 </html>
